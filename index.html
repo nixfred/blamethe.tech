@@ -9,6 +9,12 @@
       name="description"
       content="An outage happened. Descend the stack, interrogate every layer, and find out whose fault it was. (It was the tech.)"
     />
+    <meta name="author" content="Fred Nix — nixfred.com" />
+    <meta property="og:title" content="blamethe.tech" />
+    <meta
+      property="og:description"
+      content="Descend the stack. Interrogate every layer. Find out whose fault it was."
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -32,10 +38,18 @@
       <button class="intro-go" id="intro-go" type="button" hidden>
         &#9660;&nbsp;&nbsp;begin the descent
       </button>
+      <a class="intro-credit" href="https://nixfred.com" target="_blank" rel="noopener">
+        nixfred.com
+      </a>
     </div>
 
     <header class="hud">
-      <div class="brand">blame<span>the.tech</span></div>
+      <div class="brand">
+        <span class="brand-name">blame<span>the.tech</span></span>
+        <a class="brand-home" href="https://nixfred.com" target="_blank" rel="noopener">
+          a nixfred.com experiment &#8599;
+        </a>
+      </div>
       <button id="theme" class="theme-btn" type="button" aria-label="Toggle light/dark">
         <span class="theme-dot"></span>
       </button>
@@ -78,6 +92,10 @@
         <div class="v-foot">
           <span id="v-confidence">confidence 99%</span>
           <button class="v-btn" id="v-again" type="button">re-run the descent</button>
+        </div>
+        <div class="v-credit">
+          blamethe.tech — an experiment from
+          <a href="https://nixfred.com" target="_blank" rel="noopener">nixfred.com</a>
         </div>
       </div>
     </div>
