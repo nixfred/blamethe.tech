@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>blamethe.tech: the problem is Windows</title>
+<meta name="description" content="A sourced, funny-savage look at why Windows is a worse daily driver than Omarchy, with macOS in the middle. An opinion site by Fred Nix.">
+<link rel="canonical" href="https://blamethe.tech/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<!-- share card (scripts/og.py) --><meta property="og:site_name" content="blamethe.tech"><meta property="og:title" content="blamethe.tech: the problem is Windows"><meta property="og:description" content="A sourced, funny-savage look at why Windows is a worse daily driver than Omarchy, with macOS in the middle. An opinion site by Fred Nix."><meta property="og:type" content="website"><meta property="og:url" content="https://blamethe.tech/"><meta property="og:image" content="https://blamethe.tech/og.png?v=ec365b73"><meta property="og:image:secure_url" content="https://blamethe.tech/og.png?v=ec365b73"><meta property="og:image:type" content="image/png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Share card for blamethe.tech: a fake Blue Screen of Death that reads Your PC ran into a problem. The problem is Windows."><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content="@nixfred"><meta name="twitter:creator" content="@nixfred"><meta name="twitter:title" content="blamethe.tech: the problem is Windows"><meta name="twitter:description" content="A sourced, funny-savage look at why Windows is a worse daily driver than Omarchy, with macOS in the middle. An opinion site by Fred Nix."><meta name="twitter:image" content="https://blamethe.tech/og.png?v=ec365b73"><meta name="twitter:image:alt" content="Share card for blamethe.tech: a fake Blue Screen of Death that reads Your PC ran into a problem. The problem is Windows."><meta name="theme-color" content="#0b3cc8">
+<link rel="stylesheet" href="/css/site.css">
+</head>
+<body>
+<a class="skip" href="#charges">Skip to the charges</a>
+<header class="nav">
+  <img src="/assets/brand/nixfred-icon.svg" width="36" height="36" alt="nixfred hexagon logo">
+  <a class="brand" href="/">blamethe.tech</a>
+  <nav aria-label="On this page">
+    <a href="#charges">The charges</a>
+    <a href="#compare">Three OSes</a>
+    <a href="#theater">99%</a>
+    <a href="#close">The fix</a>
+  </nav>
+</header>
+
+<section class="hero" id="hero">
+  <div class="bsod" id="bsod" role="group" aria-label="A fake Blue Screen of Death. Your PC ran into a problem. The problem is Windows.">
+    <div class="bsod-inner">
+      <div class="bsod-face" aria-hidden="true">
+        <svg viewBox="0 0 120 132" fill="none">
+          <rect x="14" y="24" width="18" height="18" rx="4" fill="currentColor"/>
+          <rect x="14" y="58" width="18" height="18" rx="4" fill="currentColor"/>
+          <path d="M78 16c30 18 34 82 0 102" stroke="currentColor" stroke-width="12" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <h1>Your PC ran into a problem. The problem is Windows.</h1>
+      <p class="bsod-body">This is not a crash dump from Redmond. It is a rap sheet, with sources, for an operating system that keeps treating a working PC like a billboard, a telemetry probe, and a reason to buy a new one.</p>
+      <p class="bsod-stop">Stop code: <span>BLAME_THE_TECH</span></p>
+      <div class="bsod-row">
+        <div class="bsod-qr" aria-hidden="true">
+          <svg viewBox="0 0 15 15" fill="#0b0b0b" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="0" width="1" height="1"/><rect x="1" y="0" width="1" height="1"/><rect x="2" y="0" width="1" height="1"/><rect x="3" y="0" width="1" height="1"/><rect x="4" y="0" width="1" height="1"/><rect x="5" y="0" width="1" height="1"/><rect x="6" y="0" width="1" height="1"/><rect x="7" y="0" width="1" height="1"/><rect x="8" y="0" width="1" height="1"/><rect x="9" y="0" width="1" height="1"/><rect x="10" y="0" width="1" height="1"/><rect x="11" y="0" width="1" height="1"/><rect x="12" y="0" width="1" height="1"/><rect x="13" y="0" width="1" height="1"/><rect x="14" y="0" width="1" height="1"/><rect x="0" y="1" width="1" height="1"/><rect x="6" y="1" width="1" height="1"/><rect x="8" y="1" width="1" height="1"/><rect x="14" y="1" width="1" height="1"/><rect x="0" y="2" width="1" height="1"/><rect x="2" y="2" width="1" height="1"/><rect x="3" y="2" width="1" height="1"/><rect x="4" y="2" width="1" height="1"/><rect x="6" y="2" width="1" height="1"/><rect x="7" y="2" width="1" height="1"/><rect x="8" y="2" width="1" height="1"/><rect x="10" y="2" width="1" height="1"/><rect x="11" y="2" width="1" height="1"/><rect x="12" y="2" width="1" height="1"/><rect x="14" y="2" width="1" height="1"/><rect x="0" y="3" width="1" height="1"/><rect x="2" y="3" width="1" height="1"/><rect x="3" y="3" width="1" height="1"/><rect x="4" y="3" width="1" height="1"/><rect x="6" y="3" width="1" height="1"/><rect x="8" y="3" width="1" height="1"/><rect x="10" y="3" width="1" height="1"/><rect x="11" y="3" width="1" height="1"/><rect x="12" y="3" width="1" height="1"/><rect x="14" y="3" width="1" height="1"/><rect x="0" y="4" width="1" height="1"/><rect x="2" y="4" width="1" height="1"/><rect x="3" y="4" width="1" height="1"/><rect x="4" y="4" width="1" height="1"/><rect x="6" y="4" width="1" height="1"/><rect x="7" y="4" width="1" height="1"/><rect x="8" y="4" width="1" height="1"/><rect x="10" y="4" width="1" height="1"/><rect x="11" y="4" width="1" height="1"/><rect x="12" y="4" width="1" height="1"/><rect x="14" y="4" width="1" height="1"/><rect x="0" y="5" width="1" height="1"/><rect x="6" y="5" width="1" height="1"/><rect x="8" y="5" width="1" height="1"/><rect x="14" y="5" width="1" height="1"/><rect x="0" y="6" width="1" height="1"/><rect x="1" y="6" width="1" height="1"/><rect x="2" y="6" width="1" height="1"/><rect x="3" y="6" width="1" height="1"/><rect x="4" y="6" width="1" height="1"/><rect x="5" y="6" width="1" height="1"/><rect x="6" y="6" width="1" height="1"/><rect x="7" y="6" width="1" height="1"/><rect x="8" y="6" width="1" height="1"/><rect x="9" y="6" width="1" height="1"/><rect x="10" y="6" width="1" height="1"/><rect x="11" y="6" width="1" height="1"/><rect x="12" y="6" width="1" height="1"/><rect x="13" y="6" width="1" height="1"/><rect x="14" y="6" width="1" height="1"/><rect x="0" y="7" width="1" height="1"/><rect x="2" y="7" width="1" height="1"/><rect x="4" y="7" width="1" height="1"/><rect x="6" y="7" width="1" height="1"/><rect x="8" y="7" width="1" height="1"/><rect x="10" y="7" width="1" height="1"/><rect x="12" y="7" width="1" height="1"/><rect x="14" y="7" width="1" height="1"/><rect x="0" y="8" width="1" height="1"/><rect x="1" y="8" width="1" height="1"/><rect x="2" y="8" width="1" height="1"/><rect x="3" y="8" width="1" height="1"/><rect x="4" y="8" width="1" height="1"/><rect x="5" y="8" width="1" height="1"/><rect x="6" y="8" width="1" height="1"/><rect x="7" y="8" width="1" height="1"/><rect x="0" y="9" width="1" height="1"/><rect x="6" y="9" width="1" height="1"/><rect x="0" y="10" width="1" height="1"/><rect x="2" y="10" width="1" height="1"/><rect x="3" y="10" width="1" height="1"/><rect x="4" y="10" width="1" height="1"/><rect x="6" y="10" width="1" height="1"/><rect x="7" y="10" width="1" height="1"/><rect x="0" y="11" width="1" height="1"/><rect x="2" y="11" width="1" height="1"/><rect x="3" y="11" width="1" height="1"/><rect x="4" y="11" width="1" height="1"/><rect x="6" y="11" width="1" height="1"/><rect x="0" y="12" width="1" height="1"/><rect x="2" y="12" width="1" height="1"/><rect x="3" y="12" width="1" height="1"/><rect x="4" y="12" width="1" height="1"/><rect x="6" y="12" width="1" height="1"/><rect x="7" y="12" width="1" height="1"/><rect x="0" y="13" width="1" height="1"/><rect x="6" y="13" width="1" height="1"/><rect x="0" y="14" width="1" height="1"/><rect x="1" y="14" width="1" height="1"/><rect x="2" y="14" width="1" height="1"/><rect x="3" y="14" width="1" height="1"/><rect x="4" y="14" width="1" height="1"/><rect x="5" y="14" width="1" height="1"/><rect x="6" y="14" width="1" height="1"/><rect x="7" y="14" width="1" height="1"/></svg>
+        </div>
+        <div>
+          <p>For more information about this issue and possible fixes, keep scrolling. Or get off this screen first.</p>
+          <p class="bsod-hint">Tap, click, or press any key.</p>
+          <button class="bsod-cta" type="button">Get off this screen</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="term" id="term">
+    <div class="term-shell">
+      <div class="term-bar">
+        <img src="/assets/brand/nixfred-icon.svg" width="22" height="22" alt="">
+        <span>omarchy &middot; foot</span>
+        <span class="term-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+      </div>
+      <div class="term-body" id="term-text" aria-live="polite"></div>
+      <div class="term-actions" id="term-actions" hidden>
+        <a class="btn btn-cyan" href="#charges">Read the charges</a>
+        <a class="btn btn-ghost" href="https://omarchy.org/">Install Omarchy</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="charges">
+  <div class="wrap">
+    <p class="kicker">The charges</p>
+    <h2>A rap sheet, not a vibe check.</h2>
+    <p class="lede">Every count below is tied to a source, preferably Microsoft's own words. Claims we could not source were dropped. This is an opinion site, but the exhibits are real.</p>
+    <div class="charges">
+
+      <article class="charge" id="c1">
+        <div class="num">01</div>
+        <h3>The Start menu sells you things.</h3>
+        <p>Microsoft ships "recommendations" in the Windows 11 Start menu, including Microsoft Store apps. The company's own support pages describe personalized tips, ads, and recommendations, and they give you a toggle after the ads have already found a home on your desktop. You can turn them off. You should not have had to.</p>
+        <div class="exhibits">
+          <a class="exhibit" href="https://www.theverge.com/2024/4/24/24138949/microsoft-windows-11-start-menu-ads-recommendations-setting-disable">The Verge, Apr 2024</a>
+          <a class="exhibit alt" href="https://support.microsoft.com/en-us/windows/privacy/privacy-settings-for-recommendations-offers-in-windows-11">Microsoft Support: Recommendations &amp; offers</a>
+        </div>
+      </article>
+
+      <article class="charge" id="c2">
+        <div class="num">02</div>
+        <h3>A Microsoft account is required just to finish setup.</h3>
+        <p>Microsoft's own Windows 11 specifications say Windows 11 Home and Windows 11 Pro for personal use "require internet connectivity and a Microsoft account during initial device setup." In October 2025, a Windows Insider blog post said the company was "removing known mechanisms for creating a local account in the Windows Setup experience (OOBE)." You can still wrangle a local account later. Getting to the desktop now starts with a sign-in they decided is non-negotiable.</p>
+        <div class="exhibits">
+          <a class="exhibit" href="https://www.microsoft.com/en-us/windows/windows-11-specifications">Windows 11 specifications</a>
+          <a class="exhibit alt" href="https://blogs.windows.com/windows-insider/2025/10/06/announcing-windows-11-insider-preview-build-26220-6772-dev-channel/">Windows Insider blog, Oct 6, 2025</a>
+        </div>
+      </article>
+
+      <article class="charge" id="c3">
+        <div class="num">03</div>
+        <h3>Recall was built to snapshot what you see.</h3>
+        <p>Microsoft describes Recall as a feature that "periodically takes a snapshot of what appears on your screen" so you can search what you have already seen, "operating like your own virtual and completely private photographic memory." After security researchers and users pushed back, Microsoft delayed the launch, said the feature would be off unless you opt in, and later described snapshots as stored and processed locally, not sent to Microsoft. Those are real improvements. They do not change the original idea: an operating system vendor built a timeline of your screen.</p>
+        <div class="exhibits">
+          <a class="exhibit" href="https://blogs.windows.com/windowsexperience/2024/06/07/update-on-the-recall-preview-feature-for-copilot-pcs/">Windows Experience Blog, Jun 7, 2024</a>
+          <a class="exhibit alt" href="https://support.microsoft.com/en-us/windows/privacy/privacy-and-control-over-your-recall-experience">Microsoft Support: Recall privacy</a>
+        </div>
+      </article>
+
+      <article class="charge" id="c4">
+        <div class="num">04</div>
+        <h3>Updates install themselves. Then the PC wants a restart.</h3>
+        <p>Microsoft's support page on active hours is refreshingly honest: "The great news is that you don't have to do anything to get the latest updates, as they'll automatically download and install when they're available." Then: "Occasionally, your PC might need to restart to finish installing the updates." Active hours try to dodge the worst moment. They do not give you a real off switch. The machine will get there when it wants to.</p>
+        <div class="exhibits">
+          <a class="exhibit" href="https://support.microsoft.com/en-us/windows/deployment/updates-lifecycle/keep-your-pc-up-to-date-with-active-hours">Microsoft Support: active hours</a>
+        </div>
+      </article>
+
+      <article class="charge" id="c5">
+        <div class="num">05</div>
+        <h3>Required diagnostic data has no off switch on Home or Pro.</h3>
+        <p>Microsoft splits diagnostic data into Required and Optional. Required data is "the minimum level of diagnostic data needed to help keep your device reliable, secure, and operating normally," and it is transmitted to Microsoft. Official policy docs describe a "Diagnostic data off" value, then immediately limit it: that value "is only supported on Enterprise, Education, and Server editions." On other editions, setting it to off is "equivalent to setting the value of 1." You can refuse the optional pile. The required pile still leaves the building.</p>
+        <div class="exhibits">
+          <a class="exhibit" href="https://support.microsoft.com/en-us/windows/privacy/diagnostics-feedback-and-privacy-in-windows">Microsoft Support: diagnostics</a>
+          <a class="exhibit alt" href="https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-System">Microsoft Learn: AllowTelemetry</a>
+        </div>
+      </article>
+
+      <article class="charge" id="c6">
+        <div class="num">06</div>
+        <h3>A "clean" install still arrives with junk.</h3>
+        <p>Windows 11 still stages preinstalled apps and promotional Start tiles. How-To Geek documents how Microsoft and PC makers inject shortcuts, trial software, and cloud-fetched placeholders, and how some of that can return if you only remove it from your user profile. You can uninstall a lot of it. Spending your first evening evicting software you never asked for is a wild definition of a personal computer.</p>
+        <div class="exhibits">
+          <a class="exhibit" href="https://www.howtogeek.com/windows-11-promises-to-clean-up-bloat-but-disabling-its-own-features-is-the-only-thing-that-works/">How-To Geek, Oct 13, 2026</a>
+        </div>
+      </article>
+
+      <article class="charge" id="c7">
+        <div class="num">07</div>
+        <h3>TPM 2.0 and a short CPU list retire working machines.</h3>
+        <p>Microsoft's Windows 11 specifications require a compatible 64-bit processor, UEFI with Secure Boot capability, and TPM 2.0. If a device does not meet those requirements, Microsoft says you "may not be able to install Windows 11 on your device and might want to consider purchasing a new PC." In late 2023, Canalys estimated about 240 million PCs could not officially upgrade, as reported by Tom's Hardware. That estimate is not a landfill count. It is a measure of how many working machines Microsoft's own cutoff left behind.</p>
+        <div class="exhibits">
+          <a class="exhibit" href="https://www.microsoft.com/en-us/windows/windows-11-specifications">Windows 11 specifications</a>
+          <a class="exhibit alt" href="https://www.tomshardware.com/software/windows/microsofts-draconian-windows-11-restrictions-will-send-an-estimated-240-million-pcs-to-the-landfill-when-windows-10-hits-end-of-life-in-2025">Tom's Hardware on Canalys, Dec 2023</a>
+        </div>
+      </article>
+
+      <article class="charge" id="c8">
+        <div class="num">08</div>
+        <h3>Windows 10 support ended October 14, 2025.</h3>
+        <p>Microsoft's own support page says that on that date it stopped providing technical assistance, feature updates, and security updates for Windows 10. The PC still boots. It just no longer gets official security fixes. If a machine cannot move to Windows 11, Microsoft's guidance includes the paid Extended Security Updates program, or replacing the device. The deadline was not a surprise. The hardware gate in charge 07 is what turned a routine sunset into a shove.</p>
+        <div class="exhibits">
+          <a class="exhibit" href="https://support.microsoft.com/en-us/windows/deployment/updates-lifecycle/windows-10-support-has-ended-on-october-14-2025">Microsoft Support: Windows 10 end of support</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section class="block" id="compare">
+  <div class="wrap">
+    <p class="kicker">Same task, three OSes</p>
+    <h2>Windows, macOS, then Omarchy.</h2>
+    <p class="lede">Annoyance meters are honest opinion, grounded in official setup steps, not a stopwatch we invented. Times appear only where the vendor published them. macOS is the decent middle: nicer than Windows, still a walled-leaning luxury product. Omarchy is <a href="https://omarchy.org/">DHH and the Omarchy project's</a> Arch Linux + Hyprland setup. Fred uses it. He did not build it.</p>
+
+    <div class="tasks">
+      <article class="task">
+        <header>
+          <h3>Fresh install to a working desktop</h3>
+          <p>From boot media to a session you can actually use.</p>
+        </header>
+        <div class="tabs" role="tablist" aria-label="Choose an OS">
+          <button type="button" role="tab" aria-selected="true" data-tab="win">Windows</button>
+          <button type="button" role="tab" aria-selected="false" data-tab="mac">macOS</button>
+          <button type="button" role="tab" aria-selected="false" data-tab="oma">Omarchy</button>
+        </div>
+        <div class="cols">
+          <div class="os win" data-os="win">
+            <h4>Windows</h4>
+            <p>Home and Pro for personal use require internet and a Microsoft account during setup. Microsoft's OOBE list still includes privacy screens, a OneDrive pitch, a Microsoft 365 trial, and OEM registration pages. That is a lot of hallway between "hello" and a desktop.</p>
+            <div class="meter" aria-label="Annoyance: high, 5 of 5">
+              <span class="label">Annoyance</span>
+              <div class="pips"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></div>
+            </div>
+            <div class="exhibits">
+              <a class="exhibit alt" href="https://www.microsoft.com/en-us/windows/windows-11-specifications">Win11 specs</a>
+              <a class="exhibit alt" href="https://learn.microsoft.com/en-us/windows-hardware/customize/desktop/customize-oobe-in-windows-11">Microsoft Learn: OOBE</a>
+            </div>
+          </div>
+          <div class="os mac" data-os="mac" hidden>
+            <h4>macOS</h4>
+            <p>Setup is cleaner, and you can skip signing in with an Apple ID. The machine itself is the tax: a new Mac mini starts at $899 on Apple's own store. You paid luxury-computer money, and you still have to sit through the tour.</p>
+            <div class="meter" aria-label="Annoyance: medium, 3 of 5">
+              <span class="label">Annoyance</span>
+              <div class="pips"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></div>
+            </div>
+            <div class="exhibits">
+              <a class="exhibit alt" href="https://www.apple.com/mac-mini/">Apple: Mac mini, from $899</a>
+            </div>
+          </div>
+          <div class="os oma" data-os="oma" hidden>
+            <h4>Omarchy</h4>
+            <p>Write the official ISO to a USB stick, turn off Secure Boot and/or TPM in the BIOS, answer a short set of configuration questions, and pick a drive. Full-disk install wipes that drive, and encryption is on by default. The manual says it can be done in under a minute on the fastest modern machines, and should not take more than 5 minutes even on an older computer. That BIOS step is real work. It is still less of a gauntlet than an MSA sign-in plus a software trial.</p>
+            <div class="meter" aria-label="Annoyance: low, 2 of 5">
+              <span class="label">Annoyance</span>
+              <div class="pips"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></div>
+            </div>
+            <div class="exhibits">
+              <a class="exhibit alt" href="https://omarchy.org/manual/getting-started/">Omarchy manual: getting started</a>
+              <a class="exhibit alt" href="https://omarchy.org/">omarchy.org</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="task">
+        <header>
+          <h3>Open a terminal</h3>
+          <p>How fast can you get a prompt that feels first-class?</p>
+        </header>
+        <div class="tabs" role="tablist" aria-label="Choose an OS">
+          <button type="button" role="tab" aria-selected="true" data-tab="win">Windows</button>
+          <button type="button" role="tab" aria-selected="false" data-tab="mac">macOS</button>
+          <button type="button" role="tab" aria-selected="false" data-tab="oma">Omarchy</button>
+        </div>
+        <div class="cols">
+          <div class="os win" data-os="win">
+            <h4>Windows</h4>
+            <p>Windows Terminal exists now, and you can find it from search or Win+X. That is progress. A prompt still is not the center of the desktop. For years the "real" path was Win+R, then cmd, then an argument with IT.</p>
+            <div class="meter" aria-label="Annoyance: medium, 3 of 5">
+              <span class="label">Annoyance</span>
+              <div class="pips"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></div>
+            </div>
+          </div>
+          <div class="os mac" data-os="mac" hidden>
+            <h4>macOS</h4>
+            <p>Terminal lives in Utilities. Spotlight will find it. It works, it is not hidden, and it is also not celebrated. Fine. A little dusty.</p>
+            <div class="meter" aria-label="Annoyance: low to medium, 2 of 5">
+              <span class="label">Annoyance</span>
+              <div class="pips"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></div>
+            </div>
+          </div>
+          <div class="os oma" data-os="oma" hidden>
+            <h4>Omarchy</h4>
+            <p>Press Super + Return. Foot is the default terminal. The binding follows whichever terminal you pick later under Install, so the muscle memory stays put. The keyboard is the point of the desktop, not a side door.</p>
+            <div class="meter" aria-label="Annoyance: low, 1 of 5">
+              <span class="label">Annoyance</span>
+              <div class="pips"><i class="on"></i><i></i><i></i><i></i><i></i></div>
+            </div>
+            <div class="exhibits">
+              <a class="exhibit alt" href="https://omarchy.org/manual/terminal/">Omarchy manual: terminal</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="task">
+        <header>
+          <h3>Install an app</h3>
+          <p>Getting software onto the machine without a lecture.</p>
+        </header>
+        <div class="tabs" role="tablist" aria-label="Choose an OS">
+          <button type="button" role="tab" aria-selected="true" data-tab="win">Windows</button>
+          <button type="button" role="tab" aria-selected="false" data-tab="mac">macOS</button>
+          <button type="button" role="tab" aria-selected="false" data-tab="oma">Omarchy</button>
+        </div>
+        <div class="cols">
+          <div class="os win" data-os="win">
+            <h4>Windows</h4>
+            <p>The Microsoft Store, a downloaded installer, SmartScreen, maybe a reboot. winget exists if you already know to look for it. The default path still feels like a permission slip.</p>
+            <div class="meter" aria-label="Annoyance: medium high, 4 of 5">
+              <span class="label">Annoyance</span>
+              <div class="pips"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></div>
+            </div>
+          </div>
+          <div class="os mac" data-os="mac" hidden>
+            <h4>macOS</h4>
+            <p>The App Store is easy. Outside it, Apple's default Gatekeeper rules expect a Developer ID signature and notarization before an app opens without a fight. That is not an iPhone-style lock, but Apple still stands between you and an unsigned binary. It is a garden with a side gate, and the gate has a clerk.</p>
+            <div class="meter" aria-label="Annoyance: medium, 3 of 5">
+              <span class="label">Annoyance</span>
+              <div class="pips"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></div>
+            </div>
+            <div class="exhibits">
+              <a class="exhibit alt" href="https://support.apple.com/en-us/102445">Apple: safely open apps</a>
+              <a class="exhibit alt" href="https://developer.apple.com/documentation/security/notarizing-macos-software-before-distribution">Apple: notarization</a>
+            </div>
+          </div>
+          <div class="os oma" data-os="oma" hidden>
+            <h4>Omarchy</h4>
+            <p>Super + Space opens the Omarchy menu. Install lives there, including terminals, editors, and dev stacks. No storefront ads, no notarization clerk. The tradeoff is the usual Linux one: you should be willing to read a package name.</p>
+            <div class="meter" aria-label="Annoyance: low, 1 of 5">
+              <span class="label">Annoyance</span>
+              <div class="pips"><i class="on"></i><i></i><i></i><i></i><i></i></div>
+            </div>
+            <div class="exhibits">
+              <a class="exhibit alt" href="https://omarchy.org/manual/hotkeys/">Omarchy manual: hotkeys</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="task">
+        <header>
+          <h3>Change the theme</h3>
+          <p>Can the whole machine change its mind at once?</p>
+        </header>
+        <div class="tabs" role="tablist" aria-label="Choose an OS">
+          <button type="button" role="tab" aria-selected="true" data-tab="win">Windows</button>
+          <button type="button" role="tab" aria-selected="false" data-tab="mac">macOS</button>
+          <button type="button" role="tab" aria-selected="false" data-tab="oma">Omarchy</button>
+        </div>
+        <div class="cols">
+          <div class="os win" data-os="win">
+            <h4>Windows</h4>
+            <p>Light, dark, a handful of accent colors, a wallpaper. A real system-wide theme still means third-party tools and a hope that the next feature update will not reshuffle Settings. Meanwhile the Start menu may still be trying to recommend you an app.</p>
+            <div class="meter" aria-label="Annoyance: medium high, 4 of 5">
+              <span class="label">Annoyance</span>
+              <div class="pips"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></div>
+            </div>
+          </div>
+          <div class="os mac" data-os="mac" hidden>
+            <h4>macOS</h4>
+            <p>Light, dark, accent color, wallpaper. It looks considered. It does not restyle your terminal, your editor, and your system chrome as one piece. And when a new macOS ships, the upgrade nags can be persistent enough that people publish profiles just to quiet them.</p>
+            <div class="meter" aria-label="Annoyance: medium, 3 of 5">
+              <span class="label">Annoyance</span>
+              <div class="pips"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></div>
+            </div>
+            <div class="exhibits">
+              <a class="exhibit alt" href="https://daringfireball.net/linked/2026/02/27/how-to-block-the-upgrade-to-tahoe-alerts-and-system-settings-indicator">Daring Fireball: Tahoe alerts</a>
+            </div>
+          </div>
+          <div class="os oma" data-os="oma" hidden>
+            <h4>Omarchy</h4>
+            <p>Super + Ctrl + T opens the theme selector. Omarchy ships twenty-two themes. Each one styles the desktop, terminal, Neovim, btop, Chromium, and the whole Omarchy shell: top bar, menu, notifications, OSD, and lock screen. One decision, the entire machine follows.</p>
+            <div class="meter" aria-label="Annoyance: low, 1 of 5">
+              <span class="label">Annoyance</span>
+              <div class="pips"><i class="on"></i><i></i><i></i><i></i><i></i></div>
+            </div>
+            <div class="exhibits">
+              <a class="exhibit alt" href="https://omarchy.org/manual/themes/">Omarchy manual: themes</a>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="theater">
+  <div class="wrap">
+    <p class="kicker">A familiar ritual</p>
+    <h2>Working on updates. 99% complete.</h2>
+    <p class="lede">This one cannot actually hold your computer hostage. When it sticks, press <span class="keycap">O</span> to install Omarchy instead, or tap the button. No files are touched. Your only hostage is this browser tab.</p>
+    <div class="theater" id="update-stage">
+      <div class="update" id="update-screen">
+        <div class="spinner" aria-hidden="true"></div>
+        <h3>Working on updates</h3>
+        <p class="pct" id="update-pct">0% complete</p>
+        <p>Don't turn off your computer.</p>
+        <div class="escape" id="escape" hidden>
+          <p>Still at 99%. You have been here before.</p>
+          <button class="btn btn-cyan" id="escape-btn" type="button">Press O to install Omarchy</button>
+        </div>
+      </div>
+      <div class="term-success" id="term-success">
+        <div>nixfred@omarchy:~$ omarchy --why</div>
+        <div>updates: on your schedule</div>
+        <div>ads: none</div>
+        <div>forced reboot: declined</div>
+        <div>You can turn off Windows now.</div>
+        <div><a href="https://omarchy.org/">Get the ISO at omarchy.org</a></div>
+      </div>
+    </div>
+    <div class="counter-box">
+      <div>
+        <p class="kicker">Forced restart counter</p>
+        <p>Restarts this browser has performed at your request: <strong id="restart-count">0</strong></p>
+        <p>That number lives only on this device. It is still more consent than a typical Patch Tuesday grants you.</p>
+      </div>
+      <button class="btn btn-ghost" id="restart-btn" type="button">Restart now (required)</button>
+    </div>
+  </div>
+</section>
+
+<section class="block close" id="close">
+  <div class="wrap">
+    <p class="kicker">The close</p>
+    <h2>Stop blaming yourself. Blame the tech.</h2>
+    <p>If your PC feels loud, nosy, or half-finished, that is not a personal failing. Windows earned this rap sheet. macOS is a calmer, more expensive cousin with a clerk at the side gate. Omarchy is the keyboard-driven Arch + Hyprland setup from DHH and the Omarchy project. Fred runs it every day. He is a user, not the vendor.</p>
+    <div class="cta-row">
+      <a class="btn btn-cyan" href="https://omarchy.org/">Omarchy at omarchy.org</a>
+      <a class="btn btn-ghost" href="https://omarchy.nixfred.com/">Fred's Omarchy hub</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <img src="/assets/brand/nixfred-icon.svg" width="24" height="24" alt="">
+    <p>An opinion site by <a href="https://x.com/nixfred">Fred Nix (@nixfred)</a>. Not affiliated with Microsoft, Apple, or Basecamp. Omarchy is built by DHH and the Omarchy project. Source links sit on every charge. The nixfred hexagon is a mark of the author's sites, not of Omarchy.</p>
+  </div>
+</footer>
+
+<div class="boot-flash" id="boot-flash" role="status" aria-live="polite"></div>
+<script src="/js/site.js"></script>
+</body>
+</html>

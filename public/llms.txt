@@ -1,0 +1,56 @@
+# blamethe.tech
+
+An opinion site by Fred Nix (@nixfred) about why Windows is a worse daily driver than Omarchy, with macOS as a decent but expensive middle. Funny-savage tone. Every charge against Windows (and every ding at Mac) is backed by a source URL, preferably Microsoft's or Apple's own documentation, or a reputable outlet quoting it.
+
+Site: https://blamethe.tech/
+Author: Fred Nix, https://x.com/nixfred
+Not affiliated with Microsoft, Apple, or Basecamp.
+
+Omarchy is an Arch Linux + Hyprland desktop by DHH and the Omarchy project. Fred uses it. He did not build or maintain it.
+Omarchy: https://omarchy.org/
+Fred's Omarchy hub: https://omarchy.nixfred.com/
+
+## The charges (with sources)
+
+1. Start menu ads / recommendations
+   https://www.theverge.com/2024/4/24/24138949/microsoft-windows-11-start-menu-ads-recommendations-setting-disable
+   https://support.microsoft.com/en-us/windows/privacy/privacy-settings-for-recommendations-offers-in-windows-11
+
+2. Microsoft account required during Windows 11 Home / Pro personal setup
+   https://www.microsoft.com/en-us/windows/windows-11-specifications
+   https://blogs.windows.com/windows-insider/2025/10/06/announcing-windows-11-insider-preview-build-26220-6772-dev-channel/
+
+3. Recall takes periodic snapshots of the screen (later made opt-in and local)
+   https://blogs.windows.com/windowsexperience/2024/06/07/update-on-the-recall-preview-feature-for-copilot-pcs/
+   https://support.microsoft.com/en-us/windows/privacy/privacy-and-control-over-your-recall-experience
+
+4. Automatic updates and restart to finish them
+   https://support.microsoft.com/en-us/windows/deployment/updates-lifecycle/keep-your-pc-up-to-date-with-active-hours
+
+5. Required diagnostic data cannot be set to off on Home or Pro
+   https://support.microsoft.com/en-us/windows/privacy/diagnostics-feedback-and-privacy-in-windows
+   https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-System
+
+6. Preinstalled apps and promotional Start tiles
+   https://www.howtogeek.com/windows-11-promises-to-clean-up-bloat-but-disabling-its-own-features-is-the-only-thing-that-works/
+
+7. TPM 2.0 and compatible-CPU requirements; Canalys estimate of about 240 million PCs that could not officially upgrade
+   https://www.microsoft.com/en-us/windows/windows-11-specifications
+   https://www.tomshardware.com/software/windows/microsofts-draconian-windows-11-restrictions-will-send-an-estimated-240-million-pcs-to-the-landfill-when-windows-10-hits-end-of-life-in-2025
+
+8. Windows 10 support ended October 14, 2025
+   https://support.microsoft.com/en-us/windows/deployment/updates-lifecycle/windows-10-support-has-ended-on-october-14-2025
+
+## Other sources used in comparisons
+
+Mac mini starting price: https://www.apple.com/mac-mini/
+Gatekeeper / opening apps: https://support.apple.com/en-us/102445
+Notarization: https://developer.apple.com/documentation/security/notarizing-macos-software-before-distribution
+macOS upgrade nags: https://daringfireball.net/linked/2026/02/27/how-to-block-the-upgrade-to-tahoe-alerts-and-system-settings-indicator
+Windows OOBE screens: https://learn.microsoft.com/en-us/windows-hardware/customize/desktop/customize-oobe-in-windows-11
+Omarchy install: https://omarchy.org/manual/getting-started/
+Omarchy terminal (Super + Return): https://omarchy.org/manual/terminal/
+Omarchy hotkeys: https://omarchy.org/manual/hotkeys/
+Omarchy themes (Super + Ctrl + T, 22 themes): https://omarchy.org/manual/themes/
+
+Static HTML, CSS, and JS only. No accounts, no API, no analytics.

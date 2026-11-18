@@ -1,0 +1,19 @@
+This directory contains subsetted WOFF2 files of open fonts, used under their original licenses.
+
+Geist
+Copyright (c) 2024 Vercel, GmbH
+SIL Open Font License 1.1
+https://github.com/vercel/geist-font
+
+Tektur
+Copyright (c) 2023 The Tektur Project Authors
+SIL Open Font License 1.1
+https://github.com/hyundatso/tektur
+(distributed via Google Fonts)
+
+IBM Plex Mono
+Copyright (c) 2017 IBM Corp.
+SIL Open Font License 1.1
+https://github.com/IBM/plex
+
+The SIL Open Font License 1.1: https://scripts.sil.org/OFL
